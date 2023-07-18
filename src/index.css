@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.parent {
+  height: 97vh;
+  padding: 17% 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.parent .box {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(3, 50px);
+  justify-content: center;
+  align-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  border-width: 0 1px 1px 0;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.parent .box button {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  border-width: 1px 0 0 1px;
+  cursor: pointer;
+  font-size: 25px;
+}
